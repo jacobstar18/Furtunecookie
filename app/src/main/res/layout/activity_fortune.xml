@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@null"
+        android:gravity="center"
+        android:src="@drawable/cookiebanner" />
+
+    <TextView
+        android:id="@+id/fortune"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:textSize="30dp"
+        android:text="fortunes"
+        android:layout_centerVertical ="true"
+        android:gravity="center"
+
+        />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_id"></com.google.android.gms.ads.AdView>
+
+</LinearLayout>
+
+
